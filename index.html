@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Old Roastery | Specialty Cafe in Vesu, Surat</title>
+    <meta
+      name="description"
+      content="The Old Roastery is a specialty cafe in Vesu, Surat serving crafted coffee, Italian plates, Mexican bites, desserts, and late-night conversations."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#home" aria-label="The Old Roastery home">
+        <span class="brand-mark">OR</span>
+        <span>The Old Roastery</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Primary navigation">
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#events">Events</a>
+        <a href="#visit">Visit</a>
+        <button class="pill-button reserve-trigger" type="button">Reserve</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1800&q=85"
+            alt=""
+          />
+        </div>
+        <div class="hero-scrim"></div>
+        <div class="hero-content">
+          <p class="kicker reveal">Specialty coffee | Italian | Mexican | Desserts</p>
+          <h1 class="reveal">Where great coffee meets great moments.</h1>
+          <p class="hero-copy reveal">
+            A warm, vintage-inspired cafe in Vesu, Surat for slow mornings, date nights, laptop hours, and midnight cravings.
+          </p>
+          <div class="hero-actions reveal">
+            <button class="primary-button reserve-trigger" type="button">Reserve a table</button>
+            <a class="ghost-button" href="#menu">Explore menu</a>
+          </div>
+        </div>
+        <aside class="hero-card reveal" aria-label="Cafe highlights">
+          <div>
+            <strong>4.8</strong>
+            <span>guest rating</span>
+          </div>
+          <div>
+            <strong>1 AM</strong>
+            <span>open daily</span>
+          </div>
+          <div>
+            <strong>Vesu</strong>
+            <span>Surat</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="intro section" id="story">
+        <div class="section-heading reveal">
+          <p class="kicker">Since 2021</p>
+          <h2>Roasted for conversation, plated for craving.</h2>
+        </div>
+        <div class="intro-grid">
+          <div class="portrait-stack reveal">
+            <img
+              class="portrait-main"
+              src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=900&q=85"
+              alt="Barista preparing coffee behind a warm cafe counter."
+            />
+            <img
+              class="portrait-float"
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=640&q=85"
+              alt="Coffee being poured with latte art."
+            />
+          </div>
+          <div class="story-panel reveal">
+            <p>
+              The Old Roastery blends handcrafted coffee, generous comfort food, and a room that feels made for lingering.
+              Every cup is brewed with intention, every table is set for a little more time, and every visit should feel like
+              a small ritual.
+            </p>
+            <div class="story-list">
+              <span>Single-origin brews</span>
+              <span>Handmade desserts</span>
+              <span>Late-night ambience</span>
+              <span>Cosy work corners</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience">
+        <div class="feature-strip reveal">
+          <article>
+            <span>01</span>
+            <h3>Specialty Coffee</h3>
+            <p>Pour overs, cold coffee, creamy classics, and beans chosen for depth, aroma, and balance.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Comfort Plates</h3>
+            <p>Italian favorites and Mexican bites built for sharing, snacking, and full-table cravings.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Golden Hour Mood</h3>
+            <p>Warm light, vintage textures, soft music, and corners that make every plan feel more cinematic.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-section section" id="menu">
+        <div class="section-heading centered reveal">
+          <p class="kicker">Menu highlights</p>
+          <h2>Pick your mood.</h2>
+        </div>
+        <div class="menu-tabs reveal" role="tablist" aria-label="Menu categories">
+          <button class="tab active" type="button" data-filter="all">All</button>
+          <button class="tab" type="button" data-filter="coffee">Coffee</button>
+          <button class="tab" type="button" data-filter="food">Food</button>
+          <button class="tab" type="button" data-filter="dessert">Dessert</button>
+        </div>
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-item reveal" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=85" alt="Iced coffee in a glass." />
+            <div>
+              <p>Signature Cold Coffee</p>
+              <span>Creamy, chilled, and deeply roasted.</span>
+            </div>
+            <strong>₹210</strong>
+          </article>
+          <article class="menu-item reveal" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=85" alt="Pour over coffee brewing." />
+            <div>
+              <p>Single Origin Pour Over</p>
+              <span>Slow brewed for clarity and aroma.</span>
+            </div>
+            <strong>₹260</strong>
+          </article>
+          <article class="menu-item reveal" data-category="food">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=85" alt="Creamy pasta served in a bowl." />
+            <div>
+              <p>Creamy Alfredo Pasta</p>
+              <span>Silky sauce, herbs, and parmesan finish.</span>
+            </div>
+            <strong>₹340</strong>
+          </article>
+          <article class="menu-item reveal" data-category="food">
+            <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=900&q=85" alt="Loaded nachos with toppings." />
+            <div>
+              <p>Mexican Nachos Supreme</p>
+              <span>Crunch, salsa, cheese, beans, and heat.</span>
+            </div>
+            <strong>₹290</strong>
+          </article>
+          <article class="menu-item reveal" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=900&q=85" alt="Slice of cheesecake." />
+            <div>
+              <p>Biscoff Cheesecake</p>
+              <span>Velvet filling with caramel biscuit crunch.</span>
+            </div>
+            <strong>₹260</strong>
+          </article>
+          <article class="menu-item reveal" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85" alt="Chocolate brownie dessert." />
+            <div>
+              <p>Warm Fudge Brownie</p>
+              <span>Dense chocolate, glossy top, soft center.</span>
+            </div>
+            <strong>₹230</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section section" id="gallery">
+        <div class="section-heading reveal">
+          <p class="kicker">Inside the cafe</p>
+          <h2>Low light, rich crema, beautiful tables.</h2>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <button class="gallery-item tall reveal" type="button" data-caption="Warm corners made for slow conversations.">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=85" alt="Warm cafe seating." />
+          </button>
+          <button class="gallery-item reveal" type="button" data-caption="Coffee, plated with patience.">
+            <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=1000&q=85" alt="Coffee and breakfast on a table." />
+          </button>
+          <button class="gallery-item reveal" type="button" data-caption="Late night desserts and soft light.">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1000&q=85" alt="Dessert and coffee." />
+          </button>
+          <button class="gallery-item wide reveal" type="button" data-caption="A bar built around craft.">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1300&q=85" alt="Cafe bar and espresso machine." />
+          </button>
+        </div>
+      </section>
+
+      <section class="events section" id="events">
+        <div class="events-panel reveal">
+          <div class="events-copy">
+            <p class="kicker">Private events</p>
+            <h2>Book the whole cafe for something special.</h2>
+            <p>
+              For corporate meetups, birthdays, launches, workshops, creator gatherings, and private celebrations,
+              send us the details and we will get back with availability and arrangements.
+            </p>
+            <div class="event-tags" aria-label="Event types">
+              <span>Corporate bookings</span>
+              <span>Birthdays</span>
+              <span>Workshops</span>
+              <span>Private dinners</span>
+            </div>
+          </div>
+
+          <form class="event-form" id="eventForm">
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              Phone
+              <input name="phone" type="tel" autocomplete="tel" required />
+            </label>
+            <label>
+              Event date
+              <input name="date" type="date" required />
+            </label>
+            <label>
+              Preferred time
+              <input name="time" type="text" placeholder="Example: 7 PM - 10 PM" required />
+            </label>
+            <label>
+              Event type
+              <input name="eventType" type="text" placeholder="Corporate meetup, birthday, workshop..." required />
+            </label>
+            <label class="wide-field">
+              Details
+              <textarea name="details" rows="4" placeholder="Guest count, setup needs, food preferences, or anything else."></textarea>
+            </label>
+            <button class="primary-button full wide-field" type="submit">Send event enquiry</button>
+            <p class="event-status wide-field" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="visit section" id="visit">
+        <div class="visit-card reveal">
+          <div>
+            <p class="kicker">Visit us</p>
+            <h2>Vesu's late-night coffee address.</h2>
+            <p class="visit-copy">
+              Near BB Club Circle, Vesu, Surat. Open daily for breakfast dates, working afternoons, evening meetups, and midnight dessert runs.
+            </p>
+          </div>
+          <div class="visit-details">
+            <a class="visit-link" href="tel:+919723430995">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.62 2.65a2 2 0 0 1-.45 2.11L8 9.76a16 16 0 0 0 6.24 6.24l1.28-1.28a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.65.62A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>+91 97234 30995</span>
+            </a>
+            <a
+              class="visit-link"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=makwanavivek0409@gmail.com&su=Cafe%20enquiry%20-%20The%20Old%20Roastery"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
+                <path d="m22 6-10 7L2 6" />
+              </svg>
+              <span>makwanavivek0409@gmail.com</span>
+            </a>
+            <span>Open daily | 9:00 AM - 1:00 AM</span>
+          </div>
+          <div class="visit-actions">
+            <button class="primary-button reserve-trigger" type="button">Reserve now</button>
+            <a class="ghost-button dark" href="https://www.google.com/maps/search/?api=1&query=The+Old+Roastery+Vesu+Surat">Get directions</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>The Old Roastery</span>
+      <span>Specialty Cafe | Vesu, Surat</span>
+    </footer>
+
+    <div class="modal" id="reservationModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close reservation form">×</button>
+        <p class="kicker">Reserve</p>
+        <h2 id="modalTitle">Save your table.</h2>
+        <form id="reservationForm" novalidate>
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            Phone
+            <input name="phone" type="tel" autocomplete="tel" required />
+          </label>
+          <label>
+            Date
+            <input name="date" type="date" required />
+          </label>
+          <label>
+            Time
+            <select name="time" required>
+              <option value="">Choose time</option>
+              <option>10:00 AM</option>
+              <option>1:00 PM</option>
+              <option>5:00 PM</option>
+              <option>8:00 PM</option>
+              <option>11:00 PM</option>
+            </select>
+          </label>
+          <label>
+            Guests
+            <select name="guests" required>
+              <option>2 guests</option>
+              <option>3 guests</option>
+              <option>4 guests</option>
+              <option>5+ guests</option>
+            </select>
+          </label>
+          <button class="primary-button full" type="submit">Send on WhatsApp</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Close gallery">×</button>
+      <img src="" alt="" />
+      <p></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
